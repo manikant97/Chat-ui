@@ -36,10 +36,10 @@ const ChatWindow = () => {
   };
 
   return (
-    <div className="w-full max-w-lg h-[80vh] bg-red-100 shadow-xl rounded-2xl flex flex-col overflow-hidden border border-red-200">
-      <div className="flex-1 p-4 overflow-y-auto space-y-3 bg-white">
+    <div className="w-full max-w-lg h-[80vh] bg-gradient-to-br from-pink-100 via-yellow-100 to-cyan-100 shadow-2xl rounded-2xl flex flex-col overflow-hidden border border-red-200">
+      <div className="flex-1 p-4 overflow-y-auto space-y-3 bg-gradient-to-br from-white to-lime-50/80">
         {messages.length === 0 ? (
-          <div className="h-full flex items-center justify-center text-gray-600 text-sm">
+          <div className="h-full flex items-center justify-center text-red-600 text-sm font-semibold">
             Start the conversation!
           </div>
         ) : (
